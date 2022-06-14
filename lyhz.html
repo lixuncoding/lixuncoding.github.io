@@ -69,23 +69,24 @@ function getQueryStringArgs(){
 	// }
 	// return args;
   args = {};
+  args['appname'] = '即刻有钱花';
   args['cname'] = '洛阳华泽小额贷款有限公司';
-  args['cmail'] = 'jiu14740706299@163.com';
-  args['caddr'] = '洛阳市涧西区丽新路41号街坊世纪华阳花园综合楼2幢301';
+  args['cmail'] = 'lulu88@sysenaikeji.cn';
+  args['caddr'] = '海南省海口市江东新区琼山大道86号江东产业园创客空间HM01';
   return args;
 }
+
 
 !function(){ 
     var params = getQueryStringArgs();
     var _html = document.querySelector('#article');
     console.log(params);
     _html.innerHTML = `
-
  <div class="indent">更新日期：2021年8月10日</div>
     <div class="indent">生效日期：2020年3月20日</div>
      <h2>隐私权政策</h2>
-  <div style="text-align: right; margin-right: 20px; font-size: 12px; margin-bottom: 10px;"> 2019年03月18日</div>
-  <div class="indent">【${params&&params.cname || ''}】（以下简称“我们”）深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</div>
+  <div style="text-align: right; margin-right: 20px; font-size: 12px; margin-bottom: 10px;"> 2021年06月24日</div>
+  <div class="indent">《${params && params.appname || ''}》APP由【${params && params.cname || ''}】（以下简称“我们”）开发提供，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</div>
   <div class="indent">请在使用我们的产品（或服务）前，仔细阅读并了解本《隐私权政策》。</div>
   <strong>一、我们如何收集和使用您的个人信息</strong>
   <div class="indent">个人信息是指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。</div>
@@ -96,7 +97,7 @@ function getQueryStringArgs(){
   <p class='level-1 indent' c=' '>您提供的上述信息，将在您使用本服务期间持续授权我们使用。在您注销账号时，我们将停止使用并删除上述信息。</p>
   <p class='level-1 indent' c=' '>上述信息将存储于中华人民共和国境内。如需跨境传输，我们将会单独征得您的授权同意。</p>
   
- <p class='level-1' c='2.'>业务功能二：商品展示、个性化推荐、发送促销营销信息。</p>
+<p class='level-1' c='2.'>业务功能二：商品展示、个性化推荐、发送促销营销信息。</p>
   <p class='level-1' c='（二）'>开展内部数据分析和研究，第三方SDK服务，改善我们的产品或服务</p>
   <p class='level-1 indent' c=' '>我们收集数据是根据您与我们的互动和您所做出的选择，包括您的隐私设置以及您使用的产品和功能。我们收集的数据可能包括SDK/API/JS代码版本、浏览器、互联网服务提供商、IP地址、平台、时间戳、应用标识符、应用程序版本、应用分发渠道、独立设备标识符、iOS广告标识符（IDFA)、安卓广告主标识符、网卡（MAC）地址、国际移动设备识别码（IMEI）、设备型号、终端制造厂商、终端设备操作系统版本、会话启动/停止时间、语言所在地、时区和网络状态（WiFi等）、硬盘、CPU和电池使用情况等。详见附录表格。</p>
   <p class='level-1 indent' c=' '>1、使用友盟统计SDK，在启动app时进行统计，我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、唯一设备识别码（IMEI/android ID/IDFA/OPENUDID/GUID、SIM 卡 IMSI 信息）以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊服务。由友盟同欣（北京）科技有限公司提供技术支持。</p>
@@ -160,7 +161,7 @@ function getQueryStringArgs(){
   <p c=' '>按照中国相关的法律、法规、标准，以及其他国家、地区的通行做法，我们保障您对自己的个人信息行使以下权利：</p>
   <p class='level-1' c='（一）'>访问您的个人信息</p>
   <p class='level-1 indent' c=' '>您有权访问您的个人信息，法律法规规定的例外情况除外。如果您想行使数据访问权，可以通过以下方式自行访问：</p>
-  <p class='level-1 indent' c=' '>账户信息——如果您希望访问或编辑您的账户中的个人资料信息和支付信息、更改您的密码、添加安全信息或关闭您的账户等，您可以通过访问乐走APP执行此类操作。</p>
+  <p class='level-1 indent' c=' '>账户信息——如果您希望访问或编辑您的账户中的个人资料信息和支付信息、更改您的密码、添加安全信息或关闭您的账户等，您可以通过访问还享借APP执行此类操作。</p>
   <p class='level-1 indent' c=' '>如果您无法通过上述链接访问这些个人信息，您可以随时使用我们的 Web 表单联系，或发送电子邮件至${params&&params.cmail || ''}。我们将在30天内回复您的访问请求。</p>
   <p class='level-1 indent' c=' '>对于您在使用我们的产品或服务过程中产生的其他个人信息，只要我们不需要过多投入，我们会向您提供。如果您想行使数据访问权，请发送电子邮件至【${params&&params.cmail || ''}】。</p>
   <p class='level-1' c='（二）'>更正您的个人信息</p>
@@ -294,6 +295,7 @@ function getQueryStringArgs(){
                 <td>SDK获取</td>
             </tr>
         </table>
+
 
 
 `
