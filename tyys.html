@@ -75,27 +75,27 @@ function getQueryStringArgs(){
     var _html = document.querySelector('#article');
     console.log(params);
     _html.innerHTML = `
- <div class="indent">更新日期：2021年12月8日</div>
-    <div class="indent">生效日期：2020年3月20日</div>
-     <h2>隐私政策</h2>
+    <div class="indent">更新日期：2022年12月6日</div>
+    <div class="indent">生效日期：2022年12月6日</div>
+     <h2>隐私权政策</h2>
+  <div style="text-align: right; margin-right: 20px; font-size: 12px; margin-bottom: 10px;"> 2021年12月8日</div>
   <div class="indent">《${params && params.appname || ''}》APP由【${params && params.cname || ''}】（以下简称“我们”）开发提供，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</div>
   <div class="indent">请在使用我们的产品（或服务）前，仔细阅读并了解本《隐私权政策》。</div>
   <strong>一、我们如何收集和使用您的个人信息</strong>
   <div class="indent">个人信息是指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。</div>
   <div class="indent">我们仅会出于本政策所述的以下目的，收集和使用您的个人信息：</div>
-  <p class='level-1' c='（一）'>为您提供网上服务</p>
+  <p class='level-1' c='（一）'>为您提供网上购物服务</p>
   <p class='level-1' c='1.'>注册成为用户</p>
   <p class='level-1 indent' c=' '>为完成创建账号，您需提供以下信息：您的手机号码、密码。</p>
   <p class='level-1 indent' c=' '>您提供的上述信息，将在您使用本服务期间持续授权我们使用。在您注销账号时，我们将停止使用并删除上述信息。</p>
   <p class='level-1 indent' c=' '>上述信息将存储于中华人民共和国境内。如需跨境传输，我们将会单独征得您的授权同意。</p>
   
-
   <p class='level-1' c='（二）'>开展内部数据分析和研究，第三方SDK服务，改善我们的产品或服务</p>
-  <p class='level-1 indent' c=' '>我们收集数据是根据您与我们的互动和您所做出的选择，包括您的隐私设置以及您使用的产品和功能。我们收集的数据可能包括SDK/API/JS代码版本、浏览器、互联网服务提供商、IP地址、平台、时间戳、应用标识符、应用程序版本、应用分发渠道、独立设备标识符、iOS广告标识符（IDFA)、安卓广告主标识符、网卡（MAC）地址、国际移动设备识别码（IMEI）、设备型号、终端制造厂商、终端设备操作系统版本、会话启动/停止时间、语言所在地、时区和网络状态（WiFi等）、硬盘、CPU和电池使用情况等。详见附录表格。</p>
+  <p class='level-1 indent' c=' '>我们收集数据是根据您与我们的互动和您所做出的选择，包括您的隐私设置以及您使用的产品和功能。我们收集的数据可能包括SDK/API/JS代码版本、浏览器、互联网服务提供商、IP地址、平台、时间戳、应用标识符、应用程序版本、应用分发渠道、独立设备标识符、iOS广告标识符（IDFA)、安卓广告主标识符、网卡（MAC）地址、国际移动设备识别码（IMEI）、设备型号、终端制造厂商、终端设备操作系统版本、会话启动/停止时间、语言所在地、时区和网络状态（WiFi）、硬盘、CPU和电池使用情况。详见附录表格。</p>
   <p class='level-1 indent' c=' '>1、使用友盟统计SDK，在启动app时进行统计，我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、唯一设备识别码（IMEI/android ID/IDFA/OPENUDID/GUID、SIM 卡 IMSI 信息）以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊服务。由友盟同欣（北京）科技有限公司提供技术支持。</p>
   <p class='level-1 indent' c=' '>2、使用腾讯X5内核浏览器TBS用于渲染APP内部H5页面，在首次同意隐私弹框协议和每次启动APP的时候初始化SDK,为了能够更好的为您提供服务，TBS会默认收集用户的国际设备识别码（IMEI）、国际移动用户识别码（IMSI）、网卡地址（MAC Address）、用户机型、屏幕尺寸、操作系统版本号、目标API（targetAPI）、网络类型(ApnType)、网络变化监听广播以及 Wifi的mac地址。由深圳市腾讯计算机系统有限公司提供技术支持。</p>
   <p class='level-1 indent' c=' '>3、使用ARouter，是阿里开源的一个Android路由中间件，用于对页面、服务提供路由功能，不收集用户信息。由阿里巴巴集团控股有限公司提供技术支持。</p>
-  <p class='level-1 indent' c=' '>4、使用OAID SDK，获取补充设备标识，用于统计APP安装设备。由信通院泰尔实验室提供技术支持。</p>
+  <p class='level-1 indent' c=' '>4、使用MSA移动安全联盟SDK，获取AOID，用于统计APP安装设备。由信通院泰尔实验室提供技术支持。</p>
   <p class='level-1 indent' c=' '>5、使用谷歌Android SDK，APP基础使用库，不上传用户信息。由谷歌公司提供技术支持。</p>
    <p class='level-1 indent' c=' '>6、使用谷歌手表 SDK，Google material 风格UI基础使用库，不上传用户信息。由谷歌公司提供技术支持。</p>
     <p class='level-1 indent' c=' '>7、使用阿里巴巴实人认证SDK，验证用户是否是真人，不上传用户信息。由阿里巴巴集团控股有限公司提供技术支持。</p>
@@ -104,11 +104,12 @@ function getQueryStringArgs(){
   <p class='level-1' c='（三）'>当我们要将信息用于本策略未载明的其它用途时，会事先征求您的同意。</p>
   <p class='level-1 indent' c=' '>当我们要将基于特定目的收集而来的信息用于其他目的时，会事先征求您的同意。</p>
 
-
    <p class='level-1' c='（四）'>我们的服务需要调用哪些基本权限。</p>
-  <p class='level-1 indent' c=' '>● 电话权限: 应用商店基础服务(商店版本更新，第三方应用更新等)需要识别您的设备身份，为了获取您的设备标识信息，需要调用您的电话权限获取此项信息，除此之外不会基于其他用途进行调用。</p>
+  <p class='level-1 indent' c=' '>● 电话权限: 应用商店基础服务(商店版本更新，第三方应用更新)需要识别您的设备身份，为了获取您的设备标识信息，需要调用您的电话权限获取此项信息，除此之外不会基于其他用途进行调用。</p>
   <p class='level-1 indent' c=' '>● 存储权限:为了存储必要的应用配置文件以及您所选择下载的内容，或读取您需要上传、同步的内容，需要调用您的存储权限。</p>
   <p class='level-1 indent' c=' '>● 摄像头权限:当您使用拍摄或扫描相关功能时，我们需要调用您的摄像头权限。</p>
+  <p class='level-1 indent' c=' '>● 使用粘贴板功能:在您复制客服QQ号，或者携带邀请信息的时候会使用到粘贴板功能。</p>
+
   <p class='level-1 indent' c=' '>上述权限中，电话权限与存储权限为必要权限，拒绝必要权限授权，会影响应用基础服务的提供。摄像头权限为当您选择特定服务时才需要调用的权限，拒绝此权限授权不会影响应用基础服务的提供。上述权限您均可以通过“设置"搜索"权限管理”来进行具体权限的授权管理(因系统设置差异，此路径适用于系统版本为安卓10及之后的机器)</p>
 
   <strong>二、我们如何使用 Cookie 和同类技术</strong>
@@ -154,12 +155,12 @@ function getQueryStringArgs(){
   <p c=' '>按照中国相关的法律、法规、标准，以及其他国家、地区的通行做法，我们保障您对自己的个人信息行使以下权利：</p>
   <p class='level-1' c='（一）'>访问您的个人信息</p>
   <p class='level-1 indent' c=' '>您有权访问您的个人信息，法律法规规定的例外情况除外。如果您想行使数据访问权，可以通过以下方式自行访问：</p>
-  <p class='level-1 indent' c=' '>账户信息——如果您希望访问或编辑您的账户中的个人资料信息和支付信息、更改您的密码、添加安全信息或关闭您的账户等，您可以通过访问APP执行此类操作。</p>
-  <p class='level-1 indent' c=' '>如果您无法通过上述链接访问这些个人信息，您可以随时使用我们的 Web 表单联系，或发送电子邮件至${params&&params.cmail || ''}。我们将在15天内回复您的访问请求。</p>
+  <p class='level-1 indent' c=' '>账户信息——如果您希望访问或编辑您的账户中的个人资料信息和支付信息、更改您的密码、添加安全信息或关闭您的账户等，您可以通过访问还享借APP执行此类操作。</p>
+  <p class='level-1 indent' c=' '>如果您无法通过上述链接访问这些个人信息，您可以随时使用我们的 Web 表单联系，或发送电子邮件至${params&&params.cmail || ''}。我们将在30天内回复您的访问请求。</p>
   <p class='level-1 indent' c=' '>对于您在使用我们的产品或服务过程中产生的其他个人信息，只要我们不需要过多投入，我们会向您提供。如果您想行使数据访问权，请发送电子邮件至【${params&&params.cmail || ''}】。</p>
   <p class='level-1' c='（二）'>更正您的个人信息</p>
   <p class='level-1 indent' c=' '>当您发现我们处理的关于您的个人信息有错误时，您有权要求我们做出更正。您可以通过“（一）访问您的个人信息”中罗列的方式提出更正申请。</p>
-  <p class='level-1 indent' c=' '>如果您无法通过上述链接更正这些个人信息，您可以随时使用我们的 Web 表单联系，或发送电子邮件至${params&&params.cmail || ''}。我们将在15天内回复您的更正请求。</p>
+  <p class='level-1 indent' c=' '>如果您无法通过上述链接更正这些个人信息，您可以随时使用我们的 Web 表单联系，或发送电子邮件至${params&&params.cmail || ''}。我们将在30天内回复您的更正请求。</p>
   <p class='level-1' c='（三）'>删除您的个人信息</p>
   <p class='level-1 indent' c=' '>在以下情形中，您可以向我们提出删除个人信息的请求：</p>
   <p class='level-1' c='1、'>如果我们处理个人信息的行为违反法律法规；</p>
@@ -184,7 +185,7 @@ function getQueryStringArgs(){
   <p class='level-1 indent' c=' '>在某些业务功能中，我们可能仅依据信息系统、算法等在内的非人工自动决策机制做出决定。如果这些决定显著影响您的合法权益，您有权要求我们做出解释，我们也将提供适当的救济方式。</p>
   <p class='level-1' c='（八）'>响应您的上述请求</p>
   <p class='level-1 indent' c=' '>为保障安全，您可能需要提供书面请求，或以其他方式证明您的身份。我们可能会先要求您验证自己的身份，然后再处理您的请求。</p>
-  <p class='level-1 indent' c=' '>我们将在十五天内做出答复。如您不满意，还可以通过以下途径投诉：</p>
+  <p class='level-1 indent' c=' '>我们将在三十天内做出答复。如您不满意，还可以通过以下途径投诉：</p>
   <p class='level-1 indent' c=' '><a href="mailto:${params&&params.cmail || ''}">发送邮件至${params&&params.cmail || ''}</a></p>
   <p class='level-1 indent' c=' '>对于您合理的请求，我们原则上不收取费用，但对多次重复、超出合理限度的请求，我们将视情收取一定成本费用。对于那些无端重复、需要过多技术手段（例如，需要开发新系统或从根本上改变现行惯例）、给他人合法权益带来风险或者非常不切实际（例如，涉及备份磁带上存放的信息）的请求，我们可能会予以拒绝。</p>
   <p class='level-1 indent' c=' '>在以下情形中，按照法律法规要求，我们将无法响应您的请求：</p>
@@ -193,9 +194,6 @@ function getQueryStringArgs(){
   <p class='level-1' c='3、'>与犯罪侦查、起诉和审判等有关的；</p>
   <p class='level-1' c='4、'>有充分证据表明您存在主观恶意或滥用权利的；</p>
   <p class='level-1' c='5、'>响应您的请求将导致您或其他个人、组织的合法权益受到严重损害的。</p>
-
-   <p class='level-1' c='（九）'>注销账号</p>
-  <p class='level-1 indent' c=' '>为保障安全，您可以进入设置页面，注销账号。当您注销账号之后手机号将无法正常登录，服务端也会立即删除数据库中的您的个人信息。</p>
   
   
   <strong>六、我们如何处理儿童的个人信息</strong>
@@ -212,15 +210,15 @@ function getQueryStringArgs(){
   
   <strong>八、本隐私权政策如何更新</strong>
   <p class='level-1' c=' '>我们可能适时会对本隐私权政策进行调整或变更，本隐私权政策的任何更新将以标注更新时间的方式公布在我们网站上，除法律法规或监管规定另有强制性规定外，经调整或变更的内容一经通知或公布后的7日后生效。如您在隐私权政策调整或变更后继续使用我们提供的任一服务或访问我们相关网站的，我们相信这代表您已充分阅读、理解并接受修改后的隐私权政策并受其约束。</p>
-
+  
+  
   <strong>九、如何联系我们</strong>
   <p class='level-1 indent' c=' '>如果您对本隐私政策有任何疑问、意见或建议，通过以下方式与我们联系：</p>
-  <p class='level-1 indent' c=' '>公司名称：${params&&params.cname || ''}</p>
-  <p class='level-1 indent' c=' '>公司注册地址：${params&&params.cregistaddress || ''}</p>
-  <p class='level-1 indent' c=' '>公司电话：${params&&params.cphone || ''}</p>
-  <p class='level-1 indent' c=' '>公司常用办公地址：${params&&params.cofficeaddress || ''}</p>
+  <p class='level-1 indent' c=' '>邮箱：【<a href="mailto:${params&&params.cmail || ''}">${params&&params.cmail || ''}</a>】；地址：【${params&&params.caddr || ''}】</p>
+  <p class='level-1 indent' c=' '>我们设立了个人信息保护专职部门（或个人信息保护专员），您可以通过以下方式与其联系：【<a href="mailto:${params&&params.cmail || ''}">${params&&params.cmail || ''}</a>】</p>
+  <p class='level-1 indent' c=' '>一般情况下，我们将在三十天内回复。</p>
 
-  <strong>附录</strong>
+   <strong>附录</strong>
         <table id='table1' border="1">
             <tr>
                 <th>运营方</th>
@@ -234,7 +232,7 @@ function getQueryStringArgs(){
                 <td>友盟同欣（北京）科技有限公司</td>
                 <td> 友盟+SDK</td>
                 <td>统计分析服务</td>
-                <td>设备信息（IMEI/MAC/Android ID/IDFA/OpenUDID/GUID/SIM 卡 IMSI 信息等</td>
+                <td>设备信息（IMEI/MAC/Android ID/IDFA/OpenUDID/GUID/SIM 卡 IMSI 信息</td>
                 <td>SDK获取</td>
             </tr>
             <tr>
@@ -247,7 +245,7 @@ function getQueryStringArgs(){
            
             <tr>
                 <td>信通院泰尔实验室</td>
-                <td>OAID SDK</td>
+                <td>MSA移动安全联盟SDK</td>
                 <td>设备补充信息</td>
                 <td>oaid</td>
                 <td>SDK获取</td>
@@ -269,7 +267,7 @@ function getQueryStringArgs(){
                 <td>不获取</td>
             </tr>
 
-               <tr>
+             <tr>
                 <td>谷歌公司</td>
                 <td>Google 手表</td>
                 <td>UI基础使用库</td>
