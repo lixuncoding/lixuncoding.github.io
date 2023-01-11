@@ -47,7 +47,7 @@ div.indent{text-indent: 2rem;}
   
 function getQueryStringArgs(){
 	// //取得查询字符串并去掉开头的问号
-	// var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
+	var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
 	// //保存数据的对象
 	// args = {},
 	// //取得每一项
@@ -69,10 +69,10 @@ function getQueryStringArgs(){
 	// }
 	// return args;
   args = {};
-  args['appname'] = '好享借';
+  args['appname'] = '还享借';
   args['cname'] = '海南盛逸网络科技有限公司';
   args['cmail'] = 'hainanshengyi@ziqinxx.com';
-  args['caddr'] = '海南省海口市美兰区灵山镇琼山大道86号江东电子商务产业园加速楼103室HM02';
+  args['caddr'] = '海南省海口市美兰区灵山镇琼山大道86号江东电子商务产业园加速楼103室HM02 ';
   return args;
 }
 
@@ -82,8 +82,8 @@ function getQueryStringArgs(){
     var _html = document.querySelector('#article');
     console.log(params);
     _html.innerHTML = `
- <div class="indent">更新日期：2022年09月30日</div>
-    <div class="indent">生效日期：2020年3月20日</div>
+ <div class="indent">更新日期：2022年12月15日</div>
+    <div class="indent">生效日期：2022年12月15日</div>
      <h2>隐私权政策</h2>
   <div style="text-align: right; margin-right: 20px; font-size: 12px; margin-bottom: 10px;"> 2021年12月8日</div>
   <div class="indent">《${params && params.appname || ''}》APP由【${params && params.cname || ''}】（以下简称“我们”）开发提供，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</div>
@@ -99,10 +99,10 @@ function getQueryStringArgs(){
   
   <p class='level-1' c='（二）'>开展内部数据分析和研究，第三方SDK服务，改善我们的产品或服务</p>
   <p class='level-1 indent' c=' '>我们收集数据是根据您与我们的互动和您所做出的选择，包括您的隐私设置以及您使用的产品和功能。我们收集的数据可能包括SDK/API/JS代码版本、浏览器、互联网服务提供商、IP地址、平台、时间戳、应用标识符、应用程序版本、应用分发渠道、独立设备标识符、iOS广告标识符（IDFA)、安卓广告主标识符、网卡（MAC）地址、国际移动设备识别码（IMEI）、设备型号、终端制造厂商、终端设备操作系统版本、会话启动/停止时间、语言所在地、时区和网络状态（WiFi）、硬盘、CPU和电池使用情况。详见附录表格。</p>
-  <p class='level-1 indent' c=' '>1、使用友盟统计SDK，在启动app时进行统计，我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、唯一设备识别码（IMEI/android ID/IDFA/OPENUDID/GUID、SIM 卡 IMSI 信息）以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊服务。由友盟同欣（北京）科技有限公司提供技术支持。</p>
+  <p class='level-1 indent' c=' '>1、使用友盟统计SDK，在启动app时进行统计，我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、唯一设备识别码（IMEI/android ID/OAID/IDFA/OPENUDID/GUID、SIM 卡 IMSI 信息）以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊服务。由友盟同欣（北京）科技有限公司提供技术支持。</p>
   <p class='level-1 indent' c=' '>2、使用腾讯X5内核浏览器TBS用于渲染APP内部H5页面，在首次同意隐私弹框协议和每次启动APP的时候初始化SDK,为了能够更好的为您提供服务，TBS会默认收集用户的国际设备识别码（IMEI）、国际移动用户识别码（IMSI）、网卡地址（MAC Address）、用户机型、屏幕尺寸、操作系统版本号、目标API（targetAPI）、网络类型(ApnType)、网络变化监听广播以及 Wifi的mac地址。由深圳市腾讯计算机系统有限公司提供技术支持。</p>
   <p class='level-1 indent' c=' '>3、使用ARouter，是阿里开源的一个Android路由中间件，用于对页面、服务提供路由功能，不收集用户信息。由阿里巴巴集团控股有限公司提供技术支持。</p>
-  <p class='level-1 indent' c=' '>4、使用MSA移动安全联盟SDK，获取AOID，用于统计APP安装设备。由信通院泰尔实验室提供技术支持。</p>
+  <p class='level-1 indent' c=' '>4、使用MSA移动安全联盟SDK（OAID SDK），获取OAID，用于统计APP安装设备。由信通院泰尔实验室提供技术支持。</p>
   <p class='level-1 indent' c=' '>5、使用谷歌Android SDK，APP基础使用库，不上传用户信息。由谷歌公司提供技术支持。</p>
    <p class='level-1 indent' c=' '>6、使用谷歌手表 SDK，Google material 风格UI基础使用库，不上传用户信息。由谷歌公司提供技术支持。</p>
     <p class='level-1 indent' c=' '>7、使用阿里巴巴实人认证SDK，验证用户是否是真人，不上传用户信息。由阿里巴巴集团控股有限公司提供技术支持。</p>
@@ -254,7 +254,7 @@ function getQueryStringArgs(){
                 <td>信通院泰尔实验室</td>
                 <td>MSA移动安全联盟SDK</td>
                 <td>设备补充信息</td>
-                <td>oaid</td>
+                <td>OAID</td>
                 <td>SDK获取</td>
             </tr>
 
