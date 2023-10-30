@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,31 +50,31 @@ div.indent{text-indent: 2rem;}
 function getQueryStringArgs(){
 	// //取得查询字符串并去掉开头的问号
 	var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
-	// //保存数据的对象
-	// args = {},
-	// //取得每一项
-	// items = qs.length ? qs.split("&") : [],
-	// item = null,
-	// name = null,
-	// value = null,
-	// //在 for 循环中使用
-	// i = 0,
-	// len = items.length;
-	// //逐个将每一项添加到 args 对象中
-	// for (i=0; i < len; i++){
-	// 	item = items[i].split("=");
-	// 	name = decodeURIComponent(item[0]);
-	// 	value = decodeURIComponent(item[1]);
-	// 	if (name.length) {
-	// 		args[name] = value;
-	// 	}
-	// }
+	//保存数据的对象
+	args = {},
+	//取得每一项
+	items = qs.length ? qs.split("&") : [],
+	item = null,
+	name = null,
+	value = null,
+	//在 for 循环中使用
+	i = 0,
+	len = items.length;
+	//逐个将每一项添加到 args 对象中
+	for (i=0; i < len; i++){
+		item = items[i].split("=");
+		name = decodeURIComponent(item[0]);
+		value = decodeURIComponent(item[1]);
+		if (name.length) {
+			args[name] = value;
+		}
+	}
 	// return args;
   args = {};
   args['appname'] = '分期易';
   args['cname'] = '长沙桑清科技有限公司';
-  args['cmail'] = 'CSsangqing@suomiss67.cn|17109878546';
-  args['caddr'] = '长沙市雨花区侯家塘街道劳动西路108号第七层C0210';
+  args['cmail'] = 'CSsangqing@suomiss67.cn';
+  args['cregistaddress'] = '长沙市雨花区侯家塘街道劳动西路108号第七层C0210';
   return args;
 }
 
@@ -82,11 +84,11 @@ function getQueryStringArgs(){
     var _html = document.querySelector('#article');
     console.log(params);
     _html.innerHTML = `
- <div class="indent">更新日期：2023年09月25日</div>
-    <div class="indent">生效日期：2023年09月25日</div>
-     <h2>隐私权政策</h2>
-  <div style="text-align: right; margin-right: 20px; font-size: 12px; margin-bottom: 10px;"> 2021年12月8日</div>
-  <div class="indent">《${params && params.appname || ''}》APP由【${params && params.cname || ''}】（以下简称“我们”）开发提供，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</div>
+ <div class="indent">更新日期：2023年10月08日</div>
+    <div class="indent">生效日期：2023年10月08日</div>
+     <h2>隐私权政策</h2> 
+  <div style="text-align: right; margin-right: 20px; font-size: 12px; margin-bottom: 10px;"> 2023年10月08日</div>
+  <div class="indent">《${params && params.appname || ''}》APP由【${params && params.cname || ''}】（以下简称“我们”）开发提供，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</div>
   <div class="indent">请在使用我们的产品（或服务）前，仔细阅读并了解本《隐私权政策》。</div>
   <strong>一、我们如何收集和使用您的个人信息</strong>
   <div class="indent">个人信息是指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。</div>
@@ -99,8 +101,8 @@ function getQueryStringArgs(){
   
   <p class='level-1' c='（二）'>开展内部数据分析和研究，第三方SDK服务，改善我们的产品或服务</p>
   <p class='level-1 indent' c=' '>我们收集数据是根据您与我们的互动和您所做出的选择，包括您的隐私设置以及您使用的产品和功能。我们收集的数据可能包括SDK/API/JS代码版本、浏览器、互联网服务提供商、IP地址、平台、时间戳、应用标识符、应用程序版本、应用分发渠道、独立设备标识符、iOS广告标识符（IDFA)、安卓广告主标识符、网卡（MAC）地址、国际移动设备识别码（IMEI）、设备型号、终端制造厂商、终端设备操作系统版本、会话启动/停止时间、语言所在地、时区和网络状态（WiFi）、硬盘、CPU和电池使用情况。详见附录表格。</p>
-  <p class='level-1 indent' c=' '>1、使用友盟统计SDK，在启动app时进行统计，我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、唯一设备识别码（IIMEI/MAC/Android ID/IDFA/OAID/OpenUDID/GUID/SIM卡IMSI/ICCID/SN号）、位置信息、网络信息，以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊服务。由友盟同欣（北京）科技有限公司提供技术支持。</p>
-  <p class='level-1 indent' c=' '>2、使用腾讯X5内核浏览器TBS用于渲染APP内部H5页面，在首次同意隐私弹框协议和每次启动APP的时候初始化SDK,为了能够更好的为您提供服务，TBS会默认收集用户的国际设备识别码（IMEI）、国际移动用户识别码（IMSI）、网卡地址（MAC Address）、用户机型、屏幕尺寸、操作系统版本号、目标API（targetAPI）、网络类型(ApnType)、网络变化监听广播以及 Wifi的mac地址。由深圳市腾讯计算机系统有限公司提供技术支持。</p>
+  <p class='level-1 indent' c=' '>1、使用友盟统计SDK，在启动app时进行统计，我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、安装应用列表，唯一设备识别码（IMEI/android ID/OAID/IDFA/OPENUDID/SN号/GUID、SIM 卡 IMSI 信息）以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊服务。由友盟同欣（北京）科技有限公司提供技术支持。</p>
+  <p class='level-1 indent' c=' '>2、使用腾讯X5内核浏览器TBS用于渲染APP内部H5页面，在首次同意隐私弹框协议和每次启动APP的时候初始化SDK,为了能够更好的为您提供服务，TBS会默认收集用户的国际设备识别码（IMEI）、国际移动用户识别码（IMSI）、网卡地址（MAC Address）、用户机型、屏幕尺寸、操作系统版本号、目标API（targetAPI）、网络类型(ApnType)、安装应用列表，网络变化监听广播以及 Wifi的mac地址。由深圳市腾讯计算机系统有限公司提供技术支持。</p>
   <p class='level-1 indent' c=' '>3、使用ARouter，是阿里开源的一个Android路由中间件，用于对页面、服务提供路由功能，不收集用户信息。由阿里巴巴集团控股有限公司提供技术支持。</p>
   <p class='level-1 indent' c=' '>4、使用MSA移动安全联盟SDK（OAID SDK），获取OAID，用于统计APP安装设备。由信通院泰尔实验室提供技术支持。</p>
   <p class='level-1 indent' c=' '>5、使用谷歌Android SDK，APP基础使用库，不上传用户信息。由谷歌公司提供技术支持。</p>
@@ -121,11 +123,11 @@ function getQueryStringArgs(){
 
   <strong>二、我们如何使用 Cookie 和同类技术</strong>
   <p class='level-1' c='（一）'>Cookie</p>
-  <p class='level-1 indent' c=' '>为确保网站正常运转，我们会在您的计算机或移动设备上存储名为 Cookie 的小数据文件。Cookie 通常包含标识符、站点名称以及一些号码和字符。借助于 Cookie，网站能够存储您的偏好或购物篮内的商品等数据。</p>
+  <p class='level-1 indent' c=' '>为确保网站正常运转，我们会在您的计算机或移动设备上存储名为 Cookie 的小数据文件。Cookie 通常包含标识符、站点名称以及一些号码和字符。借助于 Cookie，网站能够存储您的偏好或购物篮内的商品数据。</p>
   <p class='level-1 indent' c=' '>我们不会将 Cookie 用于本政策所述目的之外的任何用途。您可根据自己的偏好管理或删除 Cookie。您可以清除计算机上保存的所有 Cookie，大部分网络浏览器都设有阻止 Cookie 的功能。但如果您这么做，则需要在每一次访问我们的网站时亲自更改用户设置。</p>
   <div class='exemption'>免责声明：以上建议仅供参考，不构成正式的法律意见，如您需要专业的法律意见，请您根据您的实际业务场景咨询您外聘的律师或法律顾问</div>
   <p class='level-1' c='（二）'>网站信标和像素标签</p>
-  <p class='level-1 indent' c=' '>除 Cookie 外，我们还会在网站上使用网站信标和像素标签等其他同类技术。例如，我们向您发送的电子邮件可能含有链接至我们网站内容的点击 URL。如果您点击该链接，我们则会跟踪此次点击，帮助我们了解您的产品或服务偏好并改善客户服务。网站信标通常是一种嵌入到网站或电子邮件中的透明图像。借助于电子邮件中的像素标签，我们能够获知电子邮件是否被打开。如果您不希望自己的活动以这种方式被追踪，则可以随时从我们的寄信名单中退订。</p>
+  <p class='level-1 indent' c=' '>除 Cookie 外，我们还会在网站上使用网站信标和像素标签和其他同类技术。例如，我们向您发送的电子邮件可能含有链接至我们网站内容的点击 URL。如果您点击该链接，我们则会跟踪此次点击，帮助我们了解您的产品或服务偏好并改善客户服务。网站信标通常是一种嵌入到网站或电子邮件中的透明图像。借助于电子邮件中的像素标签，我们能够获知电子邮件是否被打开。如果您不希望自己的活动以这种方式被追踪，则可以随时从我们的寄信名单中退订。</p>
   <p class='level-1' c='（三）'>Do Not Track（请勿追踪）</p>
   <p class='level-1 indent' c=' '>很多网络浏览器均设有 Do Not Track 功能，该功能可向网站发布 Do Not Track 请求。目前，主要互联网标准组织尚未设立相关政策来规定网站应如何应对此类请求。但如果您的浏览器启用了 Do Not Track，那么我们的所有网站都会尊重您的选择。</p>
   
@@ -153,7 +155,7 @@ function getQueryStringArgs(){
   <p class='level-1' c='（二）'>我们会采取一切合理可行的措施，确保未收集无关的个人信息。我们只会在达成本政策所述目的所需的期限内保留您的个人信息，除非需要延长保留期或受到法律的允许。</p>
   <p class='level-1' c='（三）'>互联网并非绝对安全的环境，而且电子邮件、即时通讯、及与其他我们用户的交流方式并未加密，我们强烈建议您不要通过此类方式发送个人信息。请使用复杂密码，协助我们保证您的账号安全。</p>
   <p class='level-1' c='（四）'>互联网环境并非百分之百安全，我们将尽力确保或担保您发送给我们的任何信息的安全性。如果我们的物理、技术、或管理防护设施遭到破坏，导致信息被非授权访问、公开披露、篡改、或毁坏，导致您的合法权益受损，我们将承担相应的法律责任。</p>
-  <p class='level-1' c='（五）'>在不幸发生个人信息安全事件后，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施等。我们将及时将事件相关情况以邮件、信函、电话、推送通知等方式告知您，难以逐一告知个人信息主体时，我们会采取合理、有效的方式发布公告。</p>
+  <p class='level-1' c='（五）'>在不幸发生个人信息安全事件后，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施。我们将及时将事件相关情况以邮件、信函、电话、推送通知以上方式告知您，难以逐一告知个人信息主体时，我们会采取合理、有效的方式发布公告。</p>
   <p class='level-1 indent' c=' '>同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。</p>
   
   
@@ -162,7 +164,7 @@ function getQueryStringArgs(){
   <p c=' '>按照中国相关的法律、法规、标准，以及其他国家、地区的通行做法，我们保障您对自己的个人信息行使以下权利：</p>
   <p class='level-1' c='（一）'>访问您的个人信息</p>
   <p class='level-1 indent' c=' '>您有权访问您的个人信息，法律法规规定的例外情况除外。如果您想行使数据访问权，可以通过以下方式自行访问：</p>
-  <p class='level-1 indent' c=' '>账户信息——如果您希望访问或编辑您的账户中的个人资料信息和支付信息、更改您的密码、添加安全信息或关闭您的账户等，您可以通过访问还享借APP执行此类操作。</p>
+  <p class='level-1 indent' c=' '>账户信息——如果您希望访问或编辑您的账户中的个人资料信息和支付信息、更改您的密码、添加安全信息或关闭您的账户，您可以通过访问还享借APP执行此类操作。</p>
   <p class='level-1 indent' c=' '>如果您无法通过上述链接访问这些个人信息，您可以随时使用我们的 Web 表单联系，或发送电子邮件至${params&&params.cmail || ''}。我们将在30天内回复您的访问请求。</p>
   <p class='level-1 indent' c=' '>对于您在使用我们的产品或服务过程中产生的其他个人信息，只要我们不需要过多投入，我们会向您提供。如果您想行使数据访问权，请发送电子邮件至【${params&&params.cmail || ''}】。</p>
   <p class='level-1' c='（二）'>更正您的个人信息</p>
@@ -189,7 +191,7 @@ function getQueryStringArgs(){
   <p class='level-1 indent' c=' '><a href="mailto:${params&&params.cmail || ''}">发送邮件至${params&&params.cmail || ''}</a> 我们会安排专员协助您操作</p>
   <p class='level-1 indent' c=' '>在技术可行的前提下，例如数据接口匹配，我们还可按您的要求，直接将您的个人信息副本传输给您指定的第三方。</p>
   <p class='level-1' c='（七）'>约束信息系统自动决策</p>
-  <p class='level-1 indent' c=' '>在某些业务功能中，我们可能仅依据信息系统、算法等在内的非人工自动决策机制做出决定。如果这些决定显著影响您的合法权益，您有权要求我们做出解释，我们也将提供适当的救济方式。</p>
+  <p class='level-1 indent' c=' '>在某些业务功能中，我们可能仅依据信息系统、算法在内的非人工自动决策机制做出决定。如果这些决定显著影响您的合法权益，您有权要求我们做出解释，我们也将提供适当的救济方式。</p>
   <p class='level-1' c='（八）'>响应您的上述请求</p>
   <p class='level-1 indent' c=' '>为保障安全，您可能需要提供书面请求，或以其他方式证明您的身份。我们可能会先要求您验证自己的身份，然后再处理您的请求。</p>
   <p class='level-1 indent' c=' '>我们将在三十天内做出答复。如您不满意，还可以通过以下途径投诉：</p>
@@ -198,7 +200,7 @@ function getQueryStringArgs(){
   <p class='level-1 indent' c=' '>在以下情形中，按照法律法规要求，我们将无法响应您的请求：</p>
   <p class='level-1' c='1、'>与国家安全、国防安全有关的；</p>
   <p class='level-1' c='2、'>与公共安全、公共卫生、重大公共利益有关的；</p>
-  <p class='level-1' c='3、'>与犯罪侦查、起诉和审判等有关的；</p>
+  <p class='level-1' c='3、'>与犯罪侦查、起诉和审判有关的；</p>
   <p class='level-1' c='4、'>有充分证据表明您存在主观恶意或滥用权利的；</p>
   <p class='level-1' c='5、'>响应您的请求将导致您或其他个人、组织的合法权益受到严重损害的。</p>
   
@@ -213,7 +215,7 @@ function getQueryStringArgs(){
   <strong>七、您的个人信息如何在全球范围转移</strong>
   <p class='level-1 indent' c=' '>原则上，我们在中华人民共和国境内收集和产生的个人信息，将存储在中华人民共和国境内。</p>
   <p class='level-1 indent' c=' '>由于我们通过遍布全球的资源和服务器提供产品或服务，这意味着，在获得您的授权同意后，您的个人信息可能会被转移到您使用产品或服务所在国家/地区的境外管辖区，或者受到来自这些管辖区的访问。</p>
-  <p class='level-1 indent' c=' '>此类管辖区可能设有不同的数据保护法，甚至未设立相关法律。在此类情况下，我们会确保您的个人信息得到在中华人民共和国境内足够同等的保护。例如，我们会请求您对跨境转移个人信息的同意，或者在跨境数据转移之前实施数据去标识化等安全举措。</p>
+  <p class='level-1 indent' c=' '>此类管辖区可能设有不同的数据保护法，甚至未设立相关法律。在此类情况下，我们会确保您的个人信息得到在中华人民共和国境内足够同等的保护。例如，我们会请求您对跨境转移个人信息的同意，或者在跨境数据转移之前实施数据去标识化安全举措。</p>
   
   <strong>八、本隐私权政策如何更新</strong>
   <p class='level-1' c=' '>我们可能适时会对本隐私权政策进行调整或变更，本隐私权政策的任何更新将以标注更新时间的方式公布在我们网站上，除法律法规或监管规定另有强制性规定外，经调整或变更的内容一经通知或公布后的7日后生效。如您在隐私权政策调整或变更后继续使用我们提供的任一服务或访问我们相关网站的，我们相信这代表您已充分阅读、理解并接受修改后的隐私权政策并受其约束。</p>
@@ -221,7 +223,7 @@ function getQueryStringArgs(){
   
   <strong>九、如何联系我们</strong>
   <p class='level-1 indent' c=' '>如果您对本隐私政策有任何疑问、意见或建议，通过以下方式与我们联系：</p>
-  <p class='level-1 indent' c=' '>邮箱：【<a href="mailto:${params&&params.cmail || ''}">${params&&params.cmail || ''}</a>】；地址：【${params&&params.caddr || ''}】</p>
+  <p class='level-1 indent' c=' '>邮箱：【<a href="mailto:${params&&params.cmail || ''}">${params&&params.cmail || ''}</a>】；地址：【${params&&params.cregistaddress || ''}】</p>
   <p class='level-1 indent' c=' '>我们设立了个人信息保护专职部门（或个人信息保护专员），您可以通过以下方式与其联系：【<a href="mailto:${params&&params.cmail || ''}">${params&&params.cmail || ''}</a>】</p>
   <p class='level-1 indent' c=' '>一般情况下，我们将在三十天内回复。</p>
 
@@ -239,7 +241,7 @@ function getQueryStringArgs(){
                 <td>友盟同欣（北京）科技有限公司</td>
                 <td> 友盟+SDK</td>
                 <td>统计分析服务</td>
-                <td>设备信息（IIMEI/MAC/Android ID/IDFA/OAID/OpenUDID/GUID/SIM卡IMSI/ICCID/SN号）</td>
+                <td>设备信息（IMEI/android ID/OAID/IDFA/OPENUDID/SN号/GUID、SIM 卡 IMSI 信息）</td>
                 <td>SDK获取</td>
             </tr>
             <tr>
